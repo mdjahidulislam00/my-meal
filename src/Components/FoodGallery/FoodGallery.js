@@ -62,8 +62,8 @@ const FoodGallery = () => {
         <h2>Search Result for {searchData}</h2>
         {
           foodsInfo.map((foodInfo) => (
-            <Col lg={4} md={6} sm={10} xs={10}>
-              <FoodDetailsCard foodInfo={foodInfo} />{" "}
+            <Col lg={4} md={6} sm={12} xs={12}>
+              <FoodDetailsCard foodInfo={foodInfo} />
             </Col>
           ))
         };

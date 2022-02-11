@@ -23,7 +23,6 @@ const FoodDetailsCard = (props) => {
   console.log(idMeal)
   return (
     <Container className="mt-3 justify-content-center">
-        <Col>
           <Card style={{ width: "23rem"}}>
             <Card.Img 
               variant="bottom"
@@ -52,7 +51,6 @@ const FoodDetailsCard = (props) => {
               </Link>
             </Card.Body>
           </Card>
-        </Col>
     </Container>
   );
 };
