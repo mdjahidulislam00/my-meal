@@ -66,7 +66,11 @@ const FoodDetails = () => {
         <Container>
           <Row className="mb-4 mt-2 justify-content-center">
             <h1>Food Details</h1>
-            <Col className="col-7 mt-3 color-light">
+            <Col lg={5} md={5} sm={12} xs={12} className="col-5 py-3">
+              <h1 style={{ color: "orange" }}>{strMeal}</h1>
+              <Image className="img-thumbnail" src={strMealThumb} />
+            </Col>
+            <Col lg={7} md={7} sm={12} xs={12} className=" mt-3 color-light">
               <h1 style={{ color: "orange" }}>Ingredient and Measure</h1>
               <Table striped bordered hover>
                 <thead>
@@ -138,10 +142,6 @@ const FoodDetails = () => {
                   </tr>
                 </tbody>
               </Table>
-            </Col>
-            <Col className="col-5 py-3">
-              <h1 style={{ color: "orange" }}>{strMeal}</h1>
-              <Image className="img-thumbnail" src={strMealThumb} />
             </Col>
             <Row className="col-12">
               <Col>

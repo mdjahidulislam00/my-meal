@@ -2,7 +2,6 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import AboutUs from '../About us/AboutUs';
 import FoodGallery from '../FoodGallery/FoodGallery';
-import Footer from '../Footer/Footer';
 import HomeBody from '../HomeBody/HomeBody';
 
 const Home = () => {
@@ -16,7 +15,7 @@ const Home = () => {
             </Row>
           </Container>
           <Container fluid className="pb-3 bg-info">
-            <Row className='mx-2'>
+            <Row>
               <FoodGallery />
             </Row>
           </Container>

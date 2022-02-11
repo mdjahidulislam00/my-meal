@@ -32,7 +32,7 @@ const FoodGallery = () => {
       .then((data) => setFoodInfo(data.meals)); 
   }, [searchData]);
   return (
-    <Container fluid>
+    <Container fluid className='bg-info'>
       <Row className="mt-2 p-4 justify-content-center">
         <h2>
           <b>Food Gallery</b>
@@ -58,11 +58,11 @@ const FoodGallery = () => {
           </Form>
         </Col>
       </Row>
-      <Row className="my-1 justify-content-xm-center">
+      <Row className="my-1 justify-content-center">
         <h2>Search Result for {searchData}</h2>
         {
           foodsInfo.map((foodInfo) => (
-            <Col lg={4} md={6} sm={12} xm={12}>
+            <Col lg={4} md={6} sm={10} xs={10}>
               <FoodDetailsCard foodInfo={foodInfo} />{" "}
             </Col>
           ))
