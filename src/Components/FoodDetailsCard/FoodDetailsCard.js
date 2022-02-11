@@ -24,10 +24,10 @@ const FoodDetailsCard = (props) => {
   return (
     <Container className="mt-3">
       <Row>
-        <Col lg={4}>
-          <Card style={{ width: "23rem" }}>
+        <Col lg={4} md={6} sm={12} xm={12} className='justify-content-center'>
+          <Card style={{ width: "22rem"}}>
             <Card.Img
-              style={{ width: "355px", height: "250px" }}
+              style={{ width: "340px", height: "250px" }}
               variant="bottom"
               className="p-2 m-1 img-thumbnail"
               src={strMealThumb}

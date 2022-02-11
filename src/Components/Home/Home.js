@@ -7,20 +7,22 @@ import HomeBody from '../HomeBody/HomeBody';
 
 const Home = () => {
     return (
-        <Container fluid className="bg-dark">
-          <Container fluid className="mt-2">
-            <Row>  
+        <Container fluid className='bg-warning'>
+          <Container className="my-2 ">
+            <Row className='pb-4'>  
               <Col>
                 <HomeBody />
               </Col>
             </Row>
           </Container>
-          <Row>
-            <FoodGallery />
-          </Row>
-          <Row>
-            <AboutUs />
-          </Row>
+          <Container fluid className="pb-3 bg-info">
+            <Row className='mx-2'>
+              <FoodGallery />
+            </Row>
+          </Container>
+            <Row className='mt-5'>
+              <AboutUs />
+            </Row>
       </Container>
     );
 };

@@ -59,10 +59,10 @@ const FoodDetails = () => {
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setMealDetails(data.meals[0]));
+      .then((data) => setMealDetails(data.meals[0]))
   }, [mealDetails]);
   return (
-      <Container className="bg-light" fluid>
+      <Container className="bg-success" fluid>
         <Container>
           <Row className="mb-4 mt-2 justify-content-center">
             <h1>Food Details</h1>

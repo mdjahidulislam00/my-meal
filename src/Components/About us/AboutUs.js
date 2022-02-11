@@ -6,8 +6,8 @@ import myPic from './AboutImage/wallpaper.jpg'
 const AboutUs = () => {
     return (
         <Container fluid className="mt-1">
-            <Row className='col-12'>
-                <h1 style={{color:'orange'}}>About Website</h1>
+            <Row className='col-12 mb-3'>
+                <h1>About Website</h1>
             </Row>
             <Row className='bg-light mt-1'>
                 <Col className='col-lg-5 col-sm-12'>

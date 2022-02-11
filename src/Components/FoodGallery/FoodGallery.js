@@ -33,16 +33,16 @@ const FoodGallery = () => {
   }, [searchData]);
   return (
     <Container fluid>
-      <Row className="mt-2  bg-warning p-4 justify-content-center">
+      <Row className="mt-2 p-4 justify-content-center">
         <h2>
           <b>Food Gallery</b>
         </h2>
-        <Col lg={6}>
+        <Col lg={6} md={6} sm={12} xm={12}>
           <Form className="d-flex">
             <FormControl
               type="search"
               placeholder="Search"
-              className="me-3"
+              className="me-1"
               aria-label="Search"
               style={{ height: "54px" }}
               ref={SearchInput}
@@ -58,18 +58,15 @@ const FoodGallery = () => {
           </Form>
         </Col>
       </Row>
-      <Row className="mt-1 justify-content-center bg-warning">
+      <Row className="my-1 justify-content-xm-center">
         <h2>Search Result for {searchData}</h2>
         {
           foodsInfo.map((foodInfo) => (
-            <Col lg={4}>
+            <Col lg={4} md={6} sm={12} xm={12}>
               <FoodDetailsCard foodInfo={foodInfo} />{" "}
             </Col>
           ))
         };
-      </Row>
-      <Row className="mt-2">
-        <Footer />
       </Row>
     </Container>
   );
