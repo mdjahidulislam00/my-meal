@@ -23,13 +23,13 @@ const FoodDetailsCard = (props) => {
   console.log(idMeal)
   return (
     <Container className="mt-3 justify-content-center">
-        <Col className=''>
+        <Col>
           <Card style={{ width: "23rem"}}>
-            <Card.Img
-              style={{ width: "355px", height: "250px" }}
+            <Card.Img 
               variant="bottom"
-              className="p-2 m-1 img-thumbnail"
+              className="p-2"
               src={strMealThumb}
+              style={{ borderRadius: "10px"}}
             />
             <Card.Body>
               <FontAwesomeIcon
