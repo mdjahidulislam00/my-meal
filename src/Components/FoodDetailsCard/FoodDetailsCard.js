@@ -22,8 +22,8 @@ const FoodDetailsCard = (props) => {
   }
   console.log(idMeal)
   return (
-    <Container className="mt-3 justify-content-center">
-          <Card style={{ width: "23rem"}}>
+    <Container className='mt-2'>
+          <Card >
             <Card.Img 
               variant="bottom"
               className="p-2"

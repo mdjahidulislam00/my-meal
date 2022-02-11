@@ -9,12 +9,12 @@ const HomeBody = () => {
   return (
     <Container fluid>
       <Row className='my-5'>
-        <Col lg={7} md={7} xm={12} xs={12}>
+        <Col lg={7} md={7} xm={12} xs='auto'>
           <Image thumbnail  src={welcomeImage} style={{width:'100%', height:'350px'}} />
         </Col>
-        <Col lg={5} md={5} xm={12} xs={12} className= ' text-white'>
+        <Col lg={5} md={5} xm={12} xs='auto' className= ' text-white'>
           <h1>Welcome to<br/>FOOD STUDIO</h1>
-          <p>We are very happy to sey that, here you can see lots of food in different country. you can
+          <p>We are very happy to say that, here you can see lots of food in different country. you can
             Search here your favorite food by it's name (beef,chicken,agg, noodles, etc) and you can see
             all the details about food like ingredients with it's measure and also you can see how to make
             so lets start with FOOD STDIO.

@@ -15,9 +15,7 @@ const Home = () => {
             </Row>
           </Container>
           <Container fluid className="pb-3 bg-info">
-            <Row>
               <FoodGallery />
-            </Row>
           </Container>
             <Row className='mt-5'>
               <AboutUs />
